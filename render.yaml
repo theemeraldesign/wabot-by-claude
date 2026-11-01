@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-wa-bot
+    runtime: docker
+    plan: starter
+    disk: { name: sessions, mountPath: /app/sessions, sizeGB: 1 }
